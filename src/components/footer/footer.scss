@@ -1,1 +1,9 @@
 @import "../../styles/global.scss";
+
+.footer {
+  background-color: $black;
+  bottom: 0;
+  color: $white;
+  position: fixed;
+  width: 100%;
+}

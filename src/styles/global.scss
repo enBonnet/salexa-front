@@ -13,6 +13,14 @@ body {
 
 html,
 body,
-#__gastby {
+#___gatsby {
   background-color: $blackOne;
+  height: 100%;
+}
+
+.slides {
+  height: 667px;
+  .slide {
+    height: 100%;
+  }
 }

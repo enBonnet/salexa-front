@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Salexa - Peluquería Venezolana`,
+    title: `Peluquería Venezolana`,
     description: `Peluquería Venezolana en Santiago de Chile, con estilistas de experiencia internacional`,
     author: `@enBonnet`,
   },

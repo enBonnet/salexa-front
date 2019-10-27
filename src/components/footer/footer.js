@@ -3,7 +3,7 @@ import "./footer.scss"
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -1,0 +1,16 @@
+@import "../../styles/global.scss";
+
+.slide {
+  align-items: center;
+  background-color: $blackOne;
+  background-image: url("../../images/fondo/fondo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
+}

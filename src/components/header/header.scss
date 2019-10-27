@@ -1,0 +1,14 @@
+@import "../../styles/global.scss";
+
+.header {
+  background-color: $black;
+  padding: 16px 8px;
+  .logos {
+    display: flex;
+    .logo,
+    .nombre {
+      height: 60px;
+      // margin: 0;
+    }
+  }
+}

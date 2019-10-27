@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Salexa - Peluquería Venezolana`,
+    description: `Peluquería Venezolana en Santiago de Chile, con estilistas de experiencia internacional`,
+    author: `@enBonnet`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

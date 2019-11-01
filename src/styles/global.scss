@@ -26,24 +26,3 @@ main {
   text-decoration: none;
   color: inherit;
 }
-
-.services {
-  align-items: center;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 640px;
-  padding: 16px 16px;
-  .section-title {
-    text-align: center;
-  }
-  .service {
-    .title {
-      text-align: center;
-      padding: 8px;
-      font-weight: 700;
-    }
-    padding: 16px 0;
-  }
-}

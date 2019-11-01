@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Salexa Estetica Venezolana`,
+        short_name: `Salexa`,
         start_url: `/`,
         background_color: `#454955`,
         theme_color: `#454955`,

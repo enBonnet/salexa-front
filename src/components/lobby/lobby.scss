@@ -1,0 +1,20 @@
+@import "../../styles/global.scss";
+
+.lobby {
+  align-items: center;
+  background-color: pink;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 640px;
+  .title-lobby {
+    background-color: $white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 8px;
+    margin-right: 64px;
+    padding: 8px 16px;
+  }
+}

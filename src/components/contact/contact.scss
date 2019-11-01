@@ -1,0 +1,27 @@
+@import "../../styles/global.scss";
+
+.contact {
+  color: $white;
+  padding: 16px;
+  .options {
+    .option {
+      padding: 8px 0;
+      .link {
+        display: flex;
+      }
+      .description {
+        margin-bottom: 8px;
+      }
+      .info {
+        font-weight: 600;
+        font-size: 18px;
+        .feather-message-circle {
+          transform: rotateY(180grad);
+        }
+      }
+      .icon {
+        margin-right: 16px;
+      }
+    }
+  }
+}

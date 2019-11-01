@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Lobby from "../components/lobby"
 import Services from "../components/services"
 import Us from "../components/us"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -23,7 +24,7 @@ const IndexPage = () => (
       message="Excelencia"
       img="https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     />
-    {/* Contacto */}
+    <Contact />
   </Layout>
 )
 

@@ -13,6 +13,10 @@
     height: 60px;
     justify-items: center;
 
+    .text {
+      display: none;
+    }
+
     .service-option {
       grid-area: service-option;
     }

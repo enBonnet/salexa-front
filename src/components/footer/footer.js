@@ -7,12 +7,15 @@ export const Footer = () => {
     <footer className="footer">
       <div className="mobile">
         <a className="link option service-option" href="#services">
+          <span className="text">Servicios</span>
           <Icons name="award" />
         </a>
         <a className="link option contact-option" href="#contact">
+          <span className="text">Contacto</span>
           <Icons name="calendar" />
         </a>
         <a className="link option team-option" href="#team">
+          <span className="text">Equipo</span>
           <Icons name="users" />
         </a>
       </div>

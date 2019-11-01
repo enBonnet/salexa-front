@@ -17,6 +17,9 @@ const IndexPage = () => (
       message="En Santiago de Chile"
       img="https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     />
+    {/* Nosotros */}
+    {/* Excelencia */}
+    {/* Contacto */}
   </Layout>
 )
 

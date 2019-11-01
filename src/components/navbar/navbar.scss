@@ -1,0 +1,15 @@
+@import "../../styles/global.scss";
+
+.navbar {
+  background-color: $black;
+  color: $orangeOne;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 16px;
+  .link {
+    display: flex;
+    .icon {
+      margin-right: 8px;
+    }
+  }
+}

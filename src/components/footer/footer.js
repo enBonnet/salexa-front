@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="mobile">
         <a className="link option service-option" href="#services">
-          <Icons name="awars" />
+          <Icons name="award" />
         </a>
         <a className="link option contact-option" href="#contact">
           <Icons name="calendar" />

@@ -5,7 +5,7 @@ import Icons from "../icons"
 
 export const Contact = () => {
   return (
-    <div className="contact">
+    <section id="contact" className="contact">
       <h2 className="section-title">Contacto</h2>
       <p className="section-message">Reservar tu cita</p>
       <div className="options">
@@ -58,6 +58,6 @@ export const Contact = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -4,7 +4,7 @@ import "./us.scss"
 
 export const Us = () => {
   return (
-    <div className="team">
+    <section id="team" className="team">
       <h2 className="section-title">Equipo</h2>
       <div className="member">
         <div className="title">Estilista</div>
@@ -34,6 +34,6 @@ export const Us = () => {
           magnam totam neque iure vel hic minus! Voluptatem, omnis?
         </div>
       </div>
-    </div>
+    </section>
   )
 }

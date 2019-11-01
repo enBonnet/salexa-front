@@ -4,7 +4,7 @@ import "./services.scss"
 
 export const Services = () => {
   return (
-    <div className="services">
+    <div id="services" className="services">
       <h2 className="section-title">Servicios</h2>
       <div className="service">
         <div className="title">Peluqueria</div>

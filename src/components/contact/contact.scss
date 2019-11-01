@@ -3,6 +3,7 @@
 .contact {
   color: $white;
   padding: 16px;
+  min-height: 640px;
   .options {
     .option {
       padding: 8px 0;
@@ -22,6 +23,20 @@
       .icon {
         margin-right: 16px;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }

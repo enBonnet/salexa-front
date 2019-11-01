@@ -4,10 +4,14 @@ import Lobby from "../lobby"
 import Services from "../services"
 import Us from "../us"
 import Contact from "../contact"
+import Navbar from "../navbar"
+import useIsMobile from "../../hooks/useIsMobile"
 
 export const Home = ({ data: { services, team } }) => {
+  const isMobile = useIsMobile()
   return (
     <Fragment>
+      {isMobile ? null : <Navbar />}
       <Lobby
         message="Estetica Venezolana"
         img="https://images.pexels.com/photos/957882/pexels-photo-957882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"

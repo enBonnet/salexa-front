@@ -16,9 +16,6 @@
       .info {
         font-weight: 600;
         font-size: 18px;
-        .feather-message-circle {
-          transform: rotateY(180grad);
-        }
       }
       .icon {
         margin-right: 16px;
@@ -37,6 +34,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      .option {
+        text-align: center;
+      }
     }
   }
 }

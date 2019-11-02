@@ -6,6 +6,8 @@
   min-height: 640px;
   .options {
     .option {
+      min-width: 300px;
+      max-width: 400px;
       padding: 8px 0;
       .link {
         display: flex;

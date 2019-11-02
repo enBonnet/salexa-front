@@ -7,25 +7,16 @@ import Contact from "../contact"
 import Navbar from "../navbar"
 import useIsMobile from "../../hooks/useIsMobile"
 
-export const Home = ({ data: { services, team } }) => {
+export const Home = ({ data: { services, team, lobby1, lobby2, lobby3 } }) => {
   const isMobile = useIsMobile()
   return (
     <Fragment>
       {isMobile ? null : <Navbar />}
-      <Lobby
-        message="Estetica Venezolana"
-        img="https://images.pexels.com/photos/957882/pexels-photo-957882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      />
+      <Lobby lobby={lobby1} />
       <Services services={services} />
-      <Lobby
-        message="En Santiago de Chile"
-        img="https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      />
+      <Lobby lobby={lobby2} />
       <Us team={team} />
-      <Lobby
-        message="Excelencia"
-        img="https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      />
+      <Lobby lobby={lobby3} />
       <Contact />
     </Fragment>
   )

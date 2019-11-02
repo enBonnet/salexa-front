@@ -3,10 +3,10 @@ import styled from "styled-components"
 
 import "./lobby.scss"
 
-export const Lobby = ({ message, img }) => {
+export const Lobby = ({ lobby: { title, photo } }) => {
   return (
-    <Wrapper className="lobby" img={img}>
-      <div className="title-lobby">{message}</div>
+    <Wrapper className="lobby" img={photo.publicURL}>
+      <div className="title-lobby">{title}</div>
     </Wrapper>
   )
 }

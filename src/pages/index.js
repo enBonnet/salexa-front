@@ -1,60 +1,67 @@
 import React from "react"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Home from "../components/home"
 
-const data = {
-  services: [
-    {
-      name: "Peluqueria",
-      photo: "https://via.placeholder.com/250",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-    {
-      name: "Peluqueria",
-      photo: "https://via.placeholder.com/250",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-    {
-      name: "Peluqueria",
-      photo: "https://via.placeholder.com/250",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-  ],
-  team: [
-    {
-      job: "Estilista",
-      photo: "https://via.placeholder.com/250",
-      name: "Marleny Kremisisky",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-    {
-      job: "Manicurista",
-      photo: "https://via.placeholder.com/250",
-      name: "Osmaily Lopez",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-    {
-      job: "Manicurista",
-      photo: "https://via.placeholder.com/250",
-      name: "Ana Maria",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore ducimus quo inventore ea minima maiores tenetur quasi labore quod. Et magnam totam neque iure vel hic minus! Voluptatem, omnis?",
-    },
-  ],
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Salexa" />
+      <Home data={data} />
+    </Layout>
+  )
 }
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Salexa" />
-    <Home data={data} />
-  </Layout>
-)
-
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    lobby1: strapiLobby(strapiId: { eq: 2 }) {
+      photo {
+        publicURL
+      }
+      title
+    }
+    lobby2: strapiLobby(strapiId: { eq: 3 }) {
+      photo {
+        publicURL
+      }
+      title
+    }
+    lobby3: strapiLobby(strapiId: { eq: 1 }) {
+      photo {
+        publicURL
+      }
+      title
+    }
+    services: allStrapiServicio(
+      limit: 3
+      sort: { fields: strapiId, order: ASC }
+    ) {
+      group(field: id) {
+        nodes {
+          nombre
+          imagen {
+            publicURL
+          }
+          descripcion
+        }
+      }
+    }
+    team: allStrapiEquipo(limit: 3, sort: { fields: strapiId, order: ASC }) {
+      group(field: id) {
+        edges {
+          node {
+            especialidad
+            foto {
+              publicURL
+            }
+            nombre
+            descripcion
+          }
+        }
+      }
+    }
+  }
+`

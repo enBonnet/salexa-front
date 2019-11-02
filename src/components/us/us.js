@@ -7,14 +7,19 @@ export const Us = ({ team }) => {
     <section id="team" className="team">
       <h2 className="section-title">Equipo</h2>
       <div className="list">
-        {team.map(({ job, photo, name, description }, index) => (
+        {team.group.map((member, index) => (
           <div className="member" key={index}>
-            <div className="title">{job}</div>
+            <div className="title">{member.edges[0].node.especialidad}</div>
             <div className="image">
-              <img src={photo} alt="fotografia del equipo" />
+              <img
+                src={member.edges[0].node.foto.publicURL}
+                alt={member.edges[0].node.especialidad}
+              />
             </div>
-            <div className="name">{name}</div>
-            <div className="description">{description}</div>
+            <div className="name">{member.edges[0].node.nombre}</div>
+            <div className="description">
+              {member.edges[0].node.descripcion}
+            </div>
           </div>
         ))}
       </div>

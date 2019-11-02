@@ -17,6 +17,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "https://salexa-cms.herokuapp.com",
+        contentTypes: ["equipo", "servicio", "lobby"],
+        queryLimit: 1000,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Salexa Estetica Venezolana`,

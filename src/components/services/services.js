@@ -7,13 +7,16 @@ export const Services = ({ services }) => {
     <div id="services" className="services">
       <h2 className="section-title">Servicios</h2>
       <div className="list">
-        {services.map(({ name, photo, description }, index) => (
+        {services.group.map((service, index) => (
           <div className="service" key={index}>
-            <div className="title">{name}</div>
+            <div className="title">{service.nodes[0].nombre}</div>
             <div className="image">
-              <img src={photo} alt={name} />
+              <img
+                src={service.nodes[0].imagen.publicURL}
+                alt={service.nodes[0].nombre}
+              />
             </div>
-            <div className="description">{description}</div>
+            <div className="description">{service.nodes[0].descripcion}</div>
           </div>
         ))}
       </div>

@@ -41,7 +41,7 @@ export const Contact = () => {
           <div className="description">Facebook</div>
           <a
             className="link"
-            href="https://www.facebook.com/salexaesteticavenezolana"
+            href="https://www.facebook.com/esteticavenezolana/"
           >
             <Icons name="facebook" />
             <span className="info">Salexa Estetica Venezolana</span>

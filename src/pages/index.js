@@ -81,7 +81,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          # Only available with the public api scraper
           thumbnails {
             src
             config_width

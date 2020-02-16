@@ -1,0 +1,41 @@
+@import "../../styles/global.scss";
+
+.Instagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .Post {
+    margin-bottom: 16px;
+    .description {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Instagram {
+    display: flex;
+    flex-wrap: wrap;
+    .Post {
+      margin-bottom: 0px;
+      display: flex;
+      color: #000000;
+      .description {
+        display: none;
+        overflow: hidden;
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        font-size: 16px;
+        padding: 8px;
+        transition: transform 1s;
+      }
+      &:hover {
+        .description {
+          display: block;
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+  }
+}

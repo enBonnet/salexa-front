@@ -5673,6 +5673,14 @@ gatsby-source-filesystem@^2.1.33:
     valid-url "^1.0.9"
     xstate "^4.6.7"
 
+gatsby-source-instagram@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-instagram/-/gatsby-source-instagram-0.6.1.tgz#8ed2548411217c8de790c94c188ce29d529c5ae2"
+  integrity sha512-LmdD+t92hEPC3Ow8Mr2SNMqYBVQpkTdfSGZ0g3V7RvKbPbwy51Nx/okI2K8n3wL7u23O3COhKohtnqhW69VPZA==
+  dependencies:
+    axios "^0.19.0"
+    cheerio "^1.0.0-rc.3"
+
 gatsby-source-strapi@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/gatsby-source-strapi/-/gatsby-source-strapi-0.0.10.tgz#a41477ddcccff8c634062e85c5df8f0eab42043e"

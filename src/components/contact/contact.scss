@@ -35,7 +35,9 @@
     .options {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      .group-1 {
+        margin-right: 32px;
+      }
       .option {
         text-align: center;
       }

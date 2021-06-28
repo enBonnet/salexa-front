@@ -9,7 +9,7 @@ export const Contact = () => {
       <h2 className="section-title">Contacto</h2>
       <p className="section-message">Reservar tu cita</p>
       <div className="options">
-        <div className="group-1">
+        {/* <div className="group-1">
           <div className="option">
             <div className="description">Llamanos</div>
             <a className="link" href="tel:56945228784">
@@ -31,9 +31,9 @@ export const Contact = () => {
               <span className="info">@salexave</span>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="group-2">
-          <div className="option">
+          {/* <div className="option">
             <div className="description">Instagram Manicura</div>
             <a className="link" href="https://www.instagram.com/nails_salexa/">
               <Icons name="instagram" />
@@ -49,7 +49,7 @@ export const Contact = () => {
               <Icons name="facebook" />
               <span className="info">Salexa Estetica Venezolana</span>
             </a>
-          </div>
+          </div> */}
           <div className="option">
             <div className="description">Visitanos en</div>
             <a
